@@ -1,12 +1,10 @@
 # arbol
 
-Descripciín basisca de su Proyecto de POO ...
+Árbol binario con los métodos que pude completar, tal vez no está completo pero no use ChatGPT (casi)
 
 # Autores
 
-- Autor 1
-- Autor 2
-
+- Samuel Calle Santa
 # Herramientas
 
 - [java 17](https://adoptium.net/es)
