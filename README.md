@@ -1,6 +1,6 @@
 # arbol
 
-Árbol binario con los métodos que pude completar, tal vez no está completo pero no use ChatGPT (casi)
+Árbol binario con los métodos que pude completar, tal vez no está completo pero no usé ChatGPT (casi)
 
 # Autores
 
