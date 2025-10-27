@@ -1,0 +1,54 @@
+public class Tree<T extends Comparable<T>>{
+    private Node<T> root;
+
+
+public class Node<T extends Comparable<T>>{
+    private T value;
+    private Node<T> rightChild;
+    private Node<T> leftChild;
+
+    public Node<T> findNode(T value){
+      return findNode(root,value);
+    }
+
+    public Node<T> findNode(Node<T> root, T value){
+
+        if(root == null){
+            return null;
+        } 
+
+        if(root.getValue().compareTo(value) == 0){
+            return root;
+        }
+
+        if(root.getValue().compareTo(value) > 1){
+            return findNode(root.getLeft(),value);
+        }
+        
+        else{
+            return findNode(root.getRight(),value);
+        }
+
+}
+
+public Node<T> findNode(T value) {
+        return findNode(root, value);
+    }
+
+    // Método recursivo auxiliar
+    private Node<T> findNode(Node<T> root, T value) {
+        if (root == null) {
+            return null;
+        }
+
+        int cmp = root.getValue().compareTo(value);
+
+        if (cmp == 0) {
+            return root;
+        } else if (cmp > 0) {
+            return findNode(root.getLeft(), value);
+        } else {
+            return findNode(root.getRight(), value);
+        }
+    }
+}

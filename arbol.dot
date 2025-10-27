@@ -1,0 +1,9 @@
+digraph G {
+    node [shape=circle, style=filled, color=lightblue];
+    "10" -> "5";
+    "5" -> "3";
+    "5" -> "7";
+    "10" -> "15";
+    "15" -> "12";
+    "15" -> "18";
+}
